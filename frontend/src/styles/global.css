@@ -35,3 +35,42 @@ body { margin: 0; background: #f6f8fb; color: #1f2937; }
 .error-text { color: #b42318; }
 .status-legend { display: flex; flex-wrap: wrap; gap: 12px; margin: 0 0 10px; font-size: 12px; color: var(--muted); }
 .legend-item { background: #eef2f7; border-radius: 999px; padding: 2px 10px; }
+.success-text { color: #15803d; }
+
+/* 检查井养护责任域 */
+.identity-bar { display: flex; align-items: center; gap: 14px; background: #fff; border: 1px solid var(--border); border-radius: 8px; padding: 10px 12px; margin-bottom: 12px; }
+.identity-pick span { display: block; font-size: 12px; color: var(--muted); }
+.identity-pick select { min-width: 180px; padding: 4px 6px; border: 1px solid var(--border); border-radius: 6px; }
+.identity-scope { margin: 0; font-size: 12px; color: var(--muted); }
+.tag { display: inline-block; font-size: 11px; border-radius: 4px; padding: 1px 6px; margin-left: 6px; vertical-align: middle; }
+.tag-legacy { background: #fef3c7; color: #92400e; }
+.tag-locked { background: #fee2e2; color: #b42318; }
+
+.audit-panel { margin-top: 16px; background: #fff; border: 1px solid var(--border); border-radius: 8px; padding: 12px; }
+.audit-panel h3 { margin: 0 0 10px; font-size: 14px; }
+.audit-table th, .audit-table td { font-size: 12px; }
+.audit-table .row-blocked { background: #fef2f2; }
+
+.modal-mask { position: fixed; inset: 0; background: rgba(15, 23, 42, 0.45); display: flex; align-items: center; justify-content: center; z-index: 20; }
+.modal-card { width: 460px; max-width: calc(100vw - 32px); max-height: calc(100vh - 48px); overflow: auto; background: #fff; border-radius: 10px; padding: 18px 20px; }
+.modal-card h3 { margin: 0 0 6px; font-size: 16px; }
+.modal-hint { font-size: 12px; color: var(--muted); margin: 8px 0; }
+.modal-actions { display: flex; justify-content: flex-end; gap: 8px; margin-top: 12px; }
+.form-item { display: block; margin-bottom: 10px; }
+.form-item span { display: block; font-size: 12px; color: var(--muted); margin-bottom: 4px; }
+.form-item input, .form-item select { width: 100%; padding: 6px 8px; border: 1px solid var(--border); border-radius: 6px; }
+
+.detail-code { font-size: 14px; color: var(--muted); font-weight: normal; }
+.detail-missing { background: #fff; border: 1px solid var(--border); border-radius: 8px; padding: 20px; }
+.detail-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 12px; margin-bottom: 12px; }
+.detail-card { background: #fff; border: 1px solid var(--border); border-radius: 8px; padding: 12px 14px; }
+.detail-card h3 { margin: 0 0 10px; font-size: 14px; }
+.detail-list { margin: 0; }
+.detail-list > div { display: flex; justify-content: space-between; gap: 12px; padding: 6px 0; border-bottom: 1px dashed var(--border); font-size: 13px; }
+.detail-list > div:last-child { border-bottom: none; }
+.detail-list dt { color: var(--muted); margin: 0; }
+.detail-list dd { margin: 0; text-align: right; }
+.action-stack { display: flex; flex-wrap: wrap; gap: 8px; }
+.edit-form input, .edit-form select { padding: 6px 8px; border: 1px solid var(--border); border-radius: 6px; }
+.edit-form .form-item input, .edit-form .form-item select { width: 100%; }
+.btn:disabled { opacity: 0.5; cursor: not-allowed; }
